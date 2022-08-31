@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 import { Pag1PageRoutingModule } from './pag1-routing.module';
 
 import { Pag1Page } from './pag1.page';
+import { MenuComponent } from 'src/app/components/menu/menu.component';
+
 
 @NgModule({
   imports: [
@@ -15,6 +17,6 @@ import { Pag1Page } from './pag1.page';
     IonicModule,
     Pag1PageRoutingModule
   ],
-  declarations: [Pag1Page]
+  declarations: [Pag1Page, MenuComponent]
 })
 export class Pag1PageModule {}
