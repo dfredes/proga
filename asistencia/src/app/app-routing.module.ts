@@ -30,7 +30,19 @@ const routes: Routes = [
   {
     path: 'pag5',
     loadChildren: () => import('./pages/pag5/pag5.module').then( m => m.Pag5PageModule)
+  },  {
+    path: 'asistencia',
+    loadChildren: () => import('./pages/asistencia/asistencia.module').then( m => m.AsistenciaPageModule)
   },
+  {
+    path: 'justificacion',
+    loadChildren: () => import('./pages/justificacion/justificacion.module').then( m => m.JustificacionPageModule)
+  },
+  {
+    path: 'ticket',
+    loadChildren: () => import('./pages/ticket/ticket.module').then( m => m.TicketPageModule)
+  },
+
 ];
 
 @NgModule({
