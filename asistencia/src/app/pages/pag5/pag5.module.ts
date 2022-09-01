@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { ElementRef, NgModule, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -21,7 +21,7 @@ import { AppComponent } from 'src/app/app.component';
 export class Pag5PageModule {
 scanActive = false;
 scanResult = null;
-@ViewChild('video' { static: false}) video: ElementRef;
+@ViewChild('video', { static: false}) video: ElementRef;
 
 videoElement: any;
 
