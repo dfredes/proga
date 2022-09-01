@@ -1,28 +1,28 @@
-<ion-header [translucent]="true">
+<ion-header collapse="condense">
   <ion-toolbar>
-    <ion-title>
-      Inicio de Secion
-    </ion-title>
+    <ion-title size="large"></ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="fondo">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large"></ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="background">
 
-  <div id="container">
-    <ion-item>
-      <ion-label position="floating">Usuario</ion-label>
-      <ion-input [(ngModel)]="user"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">Contraseña</ion-label>
-      <ion-input type="password" [(ngModel)]="clave"></ion-input>
-    </ion-item>
-    <ion-button color="tertiary" [routerLink]="['/pag1']" *ngIf="user !='Desconocido'">Iniciar Sesion {{ user }}</ion-button>
-    <ion-button color="primary" [routerLink]="['/pag2']">¿Olvidaste tu Contraseña?</ion-button>
-  </div>
+
+  <ion-card>
+    
+
+    <ion-card-content>
+      <img src="'../../../../assets/icon/Logo Asisterin.PNG">
+      <ion-item>
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input [(ngModel)]="user"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="clave"></ion-input>
+      </ion-item>
+      <ion-button color="tertiary" [routerLink]="['/pag1']" *ngIf="user !='Desconocido'">Iniciar Sesión
+      </ion-button>
+      <ion-button color="primary" [routerLink]="['/pag2']">¿Olvidaste tu Contraseña?</ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
