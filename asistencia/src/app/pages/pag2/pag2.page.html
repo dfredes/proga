@@ -12,17 +12,22 @@
 
 
 <ion-content class="background">
-  <ion-card>
-    <ion-item>
-      <p>Introduzca su correo para enviar un mail de recuperacion</p>
-    </ion-item>
-  </ion-card>  
 
-  <ion-card>
-    <ion-item>
-      <ion-label position="floating">Correo Institucional</ion-label>
-      <ion-input placeholder="pep.tapia@duocuc.cl"></ion-input>
-    </ion-item>
-  </ion-card>  
-  <ion-button color="primary" [routerLink]="['/pag4']">Enviar</ion-button>
+  <div id="container">
+    <ion-card>
+      <ion-item>
+        <p>Introduzca su correo para enviar un mail de recuperacion</p>
+      </ion-item>
+    </ion-card>  
+
+    <ion-card>
+      <ion-item>
+
+        <ion-label position="floating">Correo Institucional</ion-label>
+        <ion-input placeholder="pep.tapia@duocuc.cl"></ion-input>
+
+      </ion-item>
+    </ion-card>  
+    <ion-button color="primary" [routerLink]="['/pag4']">Enviar</ion-button>
+  </div>
 </ion-content>
